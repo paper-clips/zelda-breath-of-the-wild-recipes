@@ -1,0 +1,404 @@
+#root {
+  /* Hide scroll bars */
+  overflow-y: hidden;
+  overflow-x: hidden;
+
+  background-color: #242424;
+  color-scheme: light dark;
+}
+
+/* Game image width (link image and bars) */
+.game-width {
+  width: 1060px;
+}
+
+/* Makes text look like title (bold and large) */
+.bold-title {
+  font-size: x-large;
+}
+
+/* Text color used throughout screen */
+.white-text-color {
+  color: rgba(255, 255, 255, 0.85);
+}
+
+/* Border color on the recipe/details images */
+.gray-border-color {
+  border-color: rgba(255, 255, 255, 0.18) !important;
+}
+
+/* ---------------------------------------------------------------------------- */
+
+/* Top bar on screen */
+#bar-top-pos {
+  bottom: 210px;
+  right: 0px;
+}
+
+/* Text on top bar */
+.bar-top-text {
+  font-family: 'Nunito Sans', sans-serif;
+  font-style: italic;
+}
+
+/* Sets height of top bar to size of the image of the top bar */
+#bar-top-height {
+  height: 87px;
+}
+
+/* Set border on the top bar */
+.bar-top-border {
+  border: 0;
+  border-bottom: 1px;
+  border-style: solid;
+}
+
+/* ---------------------------------------------------------------------------- */
+
+/* Bottom bar on screen */
+#bar-bottom-pos {
+  top: 242px;
+  right: 0px;
+}
+
+/* Sets height of top bar to size of the image of the bottom bar */
+#bar-bottom-height {
+  height: 55px;
+}
+
+/* Text on bottom bar */
+.bar-bottom-text {
+  font-family: 'Nunito Sans', sans-serif;
+  font-style: italic;
+  font-size: 14px;
+}
+
+/* Set border on the bottom bar */
+.bar-bottom-border {
+  border: 0;
+  border-top: 1px;
+  border-style: solid;
+}
+
+/* ---------------------------------------------------------------------------- */
+
+/* Set size of each individual heart and adds some spacing inbetween them + animation */
+.heart {
+  width: 16px;
+  padding-right: 4px;
+
+  /* Animation */
+  animation-name: heart-animation-full;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+
+/* Full heart flashing animation */
+@keyframes heart-animation-full {
+  50% {
+    content: url("./images/hearts/heart-white-full.png");
+  }
+  100% {
+    content: url("./images/hearts/heart-red-full.png");
+  }
+}
+
+/* Half heart flashing animation */
+@keyframes heart-animation-half {
+  50% {
+    content: url("./images/hearts/heart-white-half.png");
+  }
+  100% {
+    content: url("./images/hearts/heart-red-half.png");
+  }
+}
+
+/* Quarter heart flashing animation */
+@keyframes heart-animation-quarter {
+  50% {
+    content: url("./images/hearts/heart-white-quarter.png");
+  }
+  100% {
+    content: url("./images/hearts/heart-red-quarter.png");
+  }
+}
+
+/* Sets size of second row of hearts so it doesn't disappear when there's no hearts in the second row */
+#heart-row-size {
+  height: 12px;
+}
+
+/* ---------------------------------------------------------------------------- */
+
+/* Google icons style (buttons on lower bar) */
+.material-symbols-rounded {
+  font-variation-settings:
+    'FILL' 1,
+    'wght' 500,
+    'GRAD' -25,
+    'opsz' 20
+}
+
+/* Set size and color of toggle icons (mute/play buttons on bottom bar) */
+.toggle-button {
+  font-variation-settings:
+    'FILL' 1,
+    'wght' 700,
+    'GRAD' 0,
+    'opsz' 48
+}
+
+/* ---------------------------------------------------------------------------- */
+
+/* Center screen location/size (area between top and bottom bars) */
+#center-screen {
+  right: 36px;
+  bottom: -242px;
+  height: 452px;
+}
+
+/* ---------------------------------------------------------------------------- */
+
+/* Text above each category in center screen (All, Vegetarian, ...) */
+#category-icons-text {
+  font-family: 'Nunito Sans', sans-serif;
+  font-style: italic;
+  font-size: small;
+}
+
+/* If category is selected, color will be white */
+/* .category-selected {
+  color: rgba(240, 240, 240, 0.85);
+} */
+
+/* If category is not selected, color will be gray */
+/* .category-unselected {
+  color: rgba(255, 255, 255, 0.35);
+} */
+
+/* Row of category icons */
+.category-icons-row {
+  /* Divider below categories and rows of recipes */
+  border: 0;
+  border-bottom: 1px;
+  border-style: solid;
+}
+
+/* Set min height of category title so it doesn't change based on category selection */
+.category-title {
+  min-height: 20px;
+}
+
+/* ---------------------------------------------------------------------------- */
+
+/* Row spacing between each recipe row */
+.recipe-row-spacing {
+  padding-bottom: 9px;
+}
+
+/* Spacing left and right of each recipe square */
+.recipe-button {
+  margin-right: -7px;
+  margin-left: -7px;
+}
+
+/* Gray square behind recipe image */
+.recipe-square-img {
+  width: 75px;
+  border-radius: 3px;
+}
+
+/* Set size and position of each recipe square */
+.recipe-square {
+  width: 75px;
+  height: 75px;
+  left: 0px;
+  top: -75px;
+}
+
+/* Border in between the gray square and recipe image */
+.recipe-border {
+  width: 71px;
+  height: 71px;
+
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgb(70, 70, 70);
+}
+
+/* When user hovers over recipe square, perform animation */
+.recipe-border:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgb(210, 210, 210);
+
+  /* Animation */
+  animation-name: recipe-selection;
+  animation-duration: 0.9s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+/* Recipe square highlight animation */
+@keyframes recipe-selection {
+  0% {
+    box-shadow: 0px 0px 3px 3px rgba(255, 255, 255, 0.4);
+  }
+
+  25% {
+    box-shadow: 0px 0px 3px 3px rgba(255, 255, 255, 0.3);
+  }
+
+  50% {
+    box-shadow: 0px 0px 3px 3px rgba(255, 255, 255, 0.2);
+  }
+
+  75% {
+    box-shadow: 0px 0px 3px 3px rgba(255, 255, 255, 0.1);
+  }
+
+  100% {
+    box-shadow: none;
+  }
+}
+
+/* Size of recipe image */
+.recipe-img {
+  max-width: 65px;
+  max-height: 100%;
+}
+
+/* Left arrow image size */
+#arrow-left-img {
+  width: 17px;
+}
+
+/* Left arrow position and animation */
+#arrow-left-pos {
+  width: 24px;
+  left: 65px;
+  top: 225px;
+
+  /* Animation */
+  animation-name: arrow-left-anim;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+
+/* Left arrow animation */
+@keyframes arrow-left-anim {
+  0% {
+    left: 62px;
+  }
+
+  100% {
+    left: 68px;
+  }
+}
+
+/* Right arrow image size */
+#arrow-right-img {
+  width: 17px;
+}
+
+/* Right arrow position and animation */
+#arrow-right-pos {
+  width: 24px;
+  left: 516px;
+  top: 225px;
+
+  /* Animation */
+  animation-name: arrow-right-anim;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+
+/* Right arrow animation */
+@keyframes arrow-right-anim {
+  0% {
+    left: 519px;
+  }
+
+  100% {
+    left: 513px;
+  }
+}
+
+/* ---------------------------------------------------------------------------- */
+
+/* Gray background of details image properties */
+#details-rectangle-img {
+  width: 500px;
+  height: 400px;
+  border-radius: 3px;
+}
+
+/* Border inside the gray background of details */
+#details-rectangle-size {
+  width: 497px;
+  height: 391px;
+  left: -497px;
+  top: -395px;
+
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgb(90, 90, 90);
+  border-right: 0;
+}
+
+/* Image size of the recipe in the details section */
+#details-img {
+  height: 140px;
+}
+
+/* Black background behind recipe image */
+#details-img-background {
+  width: 300px;
+  margin: 2px;
+}
+
+/* Border surrounding the black background of the recipe image */
+#details-rectangle-img-border {
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgb(90, 90, 90);
+  width: 306px;
+}
+
+/* Text area of the details */
+#details-text-size {
+  width: 300px;
+  height: 182px;
+  margin-left: 2px;
+  margin-top: 10px;
+}
+
+/* Text color and fonts, and other text properties, for the details section */
+.details-text {
+  font-family: 'Nunito Sans', sans-serif;
+  font-style: italic;
+  font-size: 13px;
+  line-height: 15px;
+}
+
+/* List of recipe ingredients */
+#details-ingredients {
+  margin-top: -5px;
+  margin-left: -10px;
+}
+
+/* Ingredients title */
+#details-ingredients-title {
+  margin-top: -10px;
+}
+
+/* Border below the details title */
+#details-title {
+  border-style: solid;
+  border-color: rgb(90, 90, 90);
+  border-width: 0px 0px 1px 0px;
+}
+
+/* Details paragraph describing recipe */
+/* #details-paragraph { } */
