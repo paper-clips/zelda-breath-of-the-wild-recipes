@@ -29,15 +29,15 @@ function Hearts({ rowHearts, isAnimationOn, selectedRecipe, heartName, setHeartN
 
     // Full hearts
     for (let i = 0; i < Math.floor(numHearts); i++) {
-      rowHearts.push(<img key={heartName + i} style={ toggleAnimation("heart-animation-full") } src="/images/hearts/heart-red-full.png" alt="Heart" className="heart" ></img>)
+      rowHearts.push(<img key={heartName + i} style={ toggleAnimation("heart-animation-full") } src="./images/hearts/heart-red-full.png" alt="Heart" className="heart" ></img>)
     }
     // Half heart (at end)
     if (remHearts == 0.5) {
-      rowHearts.push(<img key={heartName + (numHearts + 1)} style={ toggleAnimation("heart-animation-half") } src="/images/hearts/heart-red-half.png" alt="Heart" className="heart" ></img>)
+      rowHearts.push(<img key={heartName + (numHearts + 1)} style={ toggleAnimation("heart-animation-half") } src="./images/hearts/heart-red-half.png" alt="Heart" className="heart" ></img>)
     }
     // Quarter heart (at end)
     else if (remHearts == 0.25) {
-      rowHearts.push(<img key={heartName + (numHearts + 2)} style={ toggleAnimation("heart-animation-quarter") } src="/images/hearts/heart-red-quarter.png" alt="Heart" className="heart" ></img>)
+      rowHearts.push(<img key={heartName + (numHearts + 2)} style={ toggleAnimation("heart-animation-quarter") } src="./images/hearts/heart-red-quarter.png" alt="Heart" className="heart" ></img>)
     }
 
     return rowHearts;
