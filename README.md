@@ -3,7 +3,7 @@
 ![Website main screen](./public/images/website/ZeldaRecipes.png)
 
 <div align="center">
-  <h3>Go to website: <a href="">link</a>
+  <h3>Go to website: <a href="https://paper-clips.github.io/zelda-breath-of-the-wild-recipes/">link</a>
 </div>
 <br><br>
 
