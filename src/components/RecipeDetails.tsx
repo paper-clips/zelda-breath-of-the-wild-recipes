@@ -32,7 +32,7 @@ function RecipeDetails({ selectedRecipe, isAnimationOn, recipeImgPath }: Props) 
 
   return (
     <>
-      <img id="details-rectangle-img" src="/images/rectangle.png"></img>
+      <img id="details-rectangle-img" src="./images/rectangle.png"></img>
       <div className="position-relative">
         <div id="details-rectangle-size" className="position-absolute">
           <div className="ps-3 pt-3 pb-3">

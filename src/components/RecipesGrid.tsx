@@ -55,7 +55,7 @@ function RecipesGrid({ recipes, recipePageNum, totalRecipes, onSelectedRecipe, i
       <div className="row justify-content-center">
         {/* Left arrow */}
         <button style={{ display: recipePageNum > 0 ? "block" : "none" }} onClick={prevPage} id="arrow-left-pos" className="position-absolute bg-transparent border-0 p-0">
-          <img id="arrow-left-img" src="/images/arrow_left.png" alt="Left arrow"></img>
+          <img id="arrow-left-img" src="./images/arrow_left.png" alt="Left arrow"></img>
         </button>
 
         {/* Row 1 */}
@@ -93,7 +93,7 @@ function RecipesGrid({ recipes, recipePageNum, totalRecipes, onSelectedRecipe, i
 
         {/* Right arrow */}
         <button style={{ display: recipePageNum < (totalRecipes - 20) ? "block" : "none" }} onClick={ nextPage } id="arrow-right-pos" className="position-absolute bg-transparent border-0 p-0">
-          <img id="arrow-right-img" src="/images/arrow_right.png" alt="Right arrow"></img>
+          <img id="arrow-right-img" src="./images/arrow_right.png" alt="Right arrow"></img>
         </button>
       </div>
     </div >
