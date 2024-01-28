@@ -7,7 +7,7 @@
 </div>
 <br><br>
 
-Look up ingredients for your favorite recipes and use the filtered tabs to find specific recipes faster. The option to disable animations and sounds are toggled using the buttons on the bottom bar. The program was made using React, TypeScript, HTML, CSS, and Vite. <br><br>
+Look up ingredients for your favorite recipes and use the filtered tabs to find specific recipes faster. The option to disable animations and sounds are toggled using the buttons on the bottom bar. The program was made using React, TypeScript, HTML, CSS, Bootstrap, and Vite. <br><br>
 
 **Disclaimer:** _The assets such as the images used in this project are the sole property of Nintendo, and I do not claim any ownership. Other assets used are credited in the resources below._
 
@@ -17,7 +17,7 @@ To install dependencies: ```npm i```
 ## Getting Started
 To run: ```npm run dev```
 <br><br>
-Then go to website: http://localhost:5173/
+Then go to website: http://localhost:5173/ or http://localhost:5173/zelda-breath-of-the-wild-recipes/
 
 ## Resources
 - Background image: [wccftech.com](https://wccftech.com/zelda-breath-of-the-wild-new-video-compares-dock-undocked-modes-performance-smoother-handheld-mode/)
