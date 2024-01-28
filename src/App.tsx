@@ -11,7 +11,7 @@ import './App.css';
 function App() {
   const recipes = data.recipes;                // Object made of all the recipes and each of the elements (from JSON file)
   const slideSound = new Audio(slide);         // Sound of sliding sound (usually when select other category or clicking on next/previous)
-  const recipeImgPath = "./images/recipes/";   // Path where recipe images are
+  const recipeImgPath = "/images/recipes/";   // Path where recipe images are
   
   const [selectedRecipe_name, setSelectedRecipe_name] = useState("Creamy Heart Soup");                          // Keep track of which recipe was clicked on (tracked using recipe name)
   const [recipePageNum, setRecipePageNum] = useState(0);                                                        // Number of recipes currently displayed on screen, grouped by 20 (each page) (0 -> first page, 20 -> second page, 40 -> third page, etc.)

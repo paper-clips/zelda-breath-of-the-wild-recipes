@@ -10,7 +10,7 @@ interface Props {
 function BottomBar({ onAnimationToggle, onSoundToggle, prevPage, nextPage }: Props) {
   return (
     <div className="position-absolute" id="bar-bottom-pos">
-      <img className="game-width" src="images/bar-bottom.png" alt="Transparent bottom bar"></img>
+      <img className="game-width" src="/images/bar-bottom.png" alt="Transparent bottom bar"></img>
       <div className="position-absolute container mw-100 top-0 bar-bottom-border gray-border-color">
         <div id="bar-bottom-height" className="row ps-5 pe-4 pt-2">
           <div className="col-1 h-50 d-flex align-items-center justify-content-start border-0">

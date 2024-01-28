@@ -20,7 +20,7 @@ function RecipeSquare({ imgSrc, recipeName, recipeHearts, onSelectedRecipe, visi
 
     return (
         <button onClick={onRecipeSquareClick} className={visibility + " col-2 recipe-button p-0 border-0 bg-transparent"}>
-            <img className="recipe-square-img" src="./images/square.png"></img>
+            <img className="recipe-square-img" src="/images/square.png"></img>
             <div className="position-relative">
                 <div className="position-absolute d-flex align-items-center justify-content-center recipe-square">
                     <div className="recipe-border d-flex align-items-center justify-content-center">

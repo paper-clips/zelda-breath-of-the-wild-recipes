@@ -18,7 +18,7 @@ function TopBar({ numHearts, isAnimationOn, selectedRecipe }: Props) {
 
   return (
     <div className="position-absolute" id="bar-top-pos">
-      <img className="game-width" src="images/bar-top.png" alt="Transparent top bar"></img>
+      <img className="game-width" src="/images/bar-top.png" alt="Transparent top bar"></img>
       <div className="position-absolute container mw-100 top-0 bar-top-border gray-border-color">
         <div id="bar-top-height" className="row align-items-center">
           {/* Heart rows */}

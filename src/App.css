@@ -82,13 +82,12 @@
 
 /* ---------------------------------------------------------------------------- */
 
-/* Set size of each individual heart and adds some spacing inbetween them + animation */
+/* Set size of each individual heart and adds some spacing inbetween them */
 .heart {
   width: 16px;
   padding-right: 4px;
 
   /* Animation */
-  animation-name: heart-animation-full;
   animation-duration: 1s;
   animation-iteration-count: infinite;
 }
@@ -96,30 +95,30 @@
 /* Full heart flashing animation */
 @keyframes heart-animation-full {
   50% {
-    content: url("./images/hearts/heart-white-full.png");
+    content: url("/images/hearts/heart-white-full.png");
   }
   100% {
-    content: url("./images/hearts/heart-red-full.png");
+    content: url("/images/hearts/heart-red-full.png");
   }
 }
 
 /* Half heart flashing animation */
 @keyframes heart-animation-half {
   50% {
-    content: url("./images/hearts/heart-white-half.png");
+    content: url("/images/hearts/heart-white-half.png");
   }
   100% {
-    content: url("./images/hearts/heart-red-half.png");
+    content: url("/images/hearts/heart-red-half.png");
   }
 }
 
 /* Quarter heart flashing animation */
 @keyframes heart-animation-quarter {
   50% {
-    content: url("./images/hearts/heart-white-quarter.png");
+    content: url("/images/hearts/heart-white-quarter.png");
   }
   100% {
-    content: url("./images/hearts/heart-red-quarter.png");
+    content: url("/images/hearts/heart-red-quarter.png");
   }
 }
 
