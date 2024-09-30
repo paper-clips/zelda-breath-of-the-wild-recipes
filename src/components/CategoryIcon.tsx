@@ -24,7 +24,7 @@ function CategoryIcon({ currIconNum, category, onCategorySelection, newCategoryN
     };
 
     return (
-        <div className="col p-0" style={{ width: 0 }}>
+        <div className="col p-0" style={{ width: 0 }} aria-label={category}>
             <p className="mb-1 category-title">{currIconNum == newCategoryNum ? category : ""}</p>
             <button onClick={ onCategoryClick } aria-label={category} style={currIconNum == newCategoryNum ? { color: whiteColor } : { color: grayColor }} className="material-symbols-rounded category-icons-img bg-transparent border-0">{iconName}</button>
         </div>

@@ -26,7 +26,7 @@ function CategoriesRow({ isSoundOn, slideSound, onCategoryChoice, setRecipePageN
   const handleCategorySelection = (num: number) => setCurrIconNum(num);
 
   return (
-    <div className="container">
+    <div className="container" aria-label="Categories row: Filter recipes by category">
       <div id="category-icons-text" className="row justify-content-center ps-5 pe-5 text-center pb-1 category-icons-row white-text-color gray-border-color">
         {/* All (1) */}
         <CategoryIcon 

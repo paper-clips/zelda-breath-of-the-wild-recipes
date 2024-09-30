@@ -51,7 +51,7 @@ function RecipesGrid({ recipes, recipePageNum, totalRecipes, onSelectedRecipe, i
   };
 
   return (
-    <div className="container">
+    <div className="container" aria-label="Recipes grid: Contains selectable images of recipes">
       <div className="row justify-content-center">
         {/* Left arrow */}
         <button style={{ display: recipePageNum > 0 ? "block" : "none" }} onClick={prevPage} id="arrow-left-pos" className="position-absolute bg-transparent border-0 p-0">

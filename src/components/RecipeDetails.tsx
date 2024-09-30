@@ -32,25 +32,25 @@ function RecipeDetails({ selectedRecipe, isAnimationOn, recipeImgPath }: Props) 
 
   return (
     <>
-      <img id="details-rectangle-img" src="./images/rectangle.png"></img>
-      <div className="position-relative">
+      <img id="details-rectangle-img" src="./images/rectangle.png" alt="Transparent rectangle"></img>
+      <div className="position-relative" aria-label="Recipe details">
         <div id="details-rectangle-size" className="position-absolute">
           <div className="ps-3 pt-3 pb-3">
             {/* Recipe image */}
-            <div id="details-rectangle-img-border">
+            <div id="details-rectangle-img-border" aria-label={selectedRecipe.name + " image"}>
               <div id="details-img-background" className="bg-dark justify-content-center d-flex">
                 <img id="details-img" src={recipeImgPath+selectedRecipe.file} alt={selectedRecipe.name} ></img>
               </div>
             </div>
             {/* Recipe details */}
-            <div id="details-text-size" className="details-text white-text-color">
+            <div id="details-text-size" className="details-text white-text-color" aria-label="Recipe details">
               {/* Recipe name */}
               <h4 id="details-title">{selectedRecipe.name}</h4>
               {/* Recipe description */}
-              <p id="details-paragraph">{description}</p>
+              <p id="details-paragraph" aria-label="Description">{description}</p>
               {/* Recipe ingredients */}
               <h6 id="details-ingredients-title">Ingredients:</h6>
-              <ul id="details-ingredients">
+              <ul id="details-ingredients" aria-label="Ingredients list">
                 {selectedRecipe.ingredient1 && <li>{selectedRecipe.ingredient1}</li>}
                 {selectedRecipe.ingredient2 && <li>{selectedRecipe.ingredient2}</li>}
                 {selectedRecipe.ingredient3 && <li>{selectedRecipe.ingredient3}</li>}

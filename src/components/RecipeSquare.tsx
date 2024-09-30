@@ -24,7 +24,7 @@ function RecipeSquare({ imgSrc, recipeName, recipeHearts, onSelectedRecipe, visi
             <div className="position-relative">
                 <div className="position-absolute d-flex align-items-center justify-content-center recipe-square">
                     <div className="recipe-border d-flex align-items-center justify-content-center">
-                        <img className="recipe-img" src={recipeImgPath+imgSrc} alt={recipeName} ></img>
+                        <img className="recipe-img" src={recipeImgPath+imgSrc} alt={recipeName + " image"} ></img>
                     </div>
                 </div>
             </div>

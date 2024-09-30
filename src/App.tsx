@@ -84,7 +84,7 @@ function App() {
     <div className="d-flex min-vh-100 min-vw-100">
       <div className="d-flex flex-grow-1 justify-content-center align-items-center">
         {/* Link background image */}
-        <img className="game-width" src="./images/linkImage.png" alt="Screenshot of Link next to a stack of planks surrounded by greenery" 
+        <img className="game-width" src="./images/linkImage.png" alt="Link standing next to a stack of planks surrounded by greenery, the image is blurred" 
         />
 
         {/* Game screen */}
@@ -97,8 +97,8 @@ function App() {
           />
 
           {/* Center screen */}
-          <div className="position-absolute container">
-            <div id="center-screen" className="position-absolute row game-width pt-3 ps-5">
+          <div className="position-absolute container" aria-label="Main screen: Includes categories of recipes, list of recipes, and recipe details">
+            <div id="center-screen" className="position-absolute row game-width pt-3 ps-5" aria-label="Main screen elements">
               <div className="col-6 ps-4 pe-4">
                 {/* Row of categories to select from */}
                 <CategoriesRow 

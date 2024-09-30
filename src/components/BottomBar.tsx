@@ -9,9 +9,9 @@ interface Props {
 
 function BottomBar({ onAnimationToggle, onSoundToggle, prevPage, nextPage }: Props) {
   return (
-    <div className="position-absolute" id="bar-bottom-pos">
+    <div className="position-absolute" id="bar-bottom-pos" aria-label="Bottom bar: Includes sound effect toggle button, animations toggle button, previous recipes button, and next recipes button">
       <img className="game-width" src="./images/bar-bottom.png" alt="Transparent bottom bar"></img>
-      <div className="position-absolute container mw-100 top-0 bar-bottom-border gray-border-color">
+      <div className="position-absolute container mw-100 top-0 bar-bottom-border gray-border-color" aria-label="Bottom bar elements">
         <div id="bar-bottom-height" className="row ps-5 pe-4 pt-2">
           <div className="col-1 h-50 d-flex align-items-center justify-content-start border-0">
             {/* Audio on/off button */}
@@ -31,25 +31,25 @@ function BottomBar({ onAnimationToggle, onSoundToggle, prevPage, nextPage }: Pro
           <div className="col-8 bar-bottom-text white-text-color"></div>
 
           {/* Search button */}
-          {/* <div className="col-1 me-4 pe-0 h-50 d-flex align-items-center justify-content-end bar-bottom-text white-text-color">
+          {/* <div className="col-1 me-4 pe-0 h-50 d-flex align-items-center justify-content-end bar-bottom-text white-text-color" aria-label="Search recipes">
             <span>Search</span>
             <button className="material-symbols-rounded white-text-color bg-transparent border-0" aria-label="Search">cancel</button>
           </div> */}
 
           {/* Previous button */}
-          <div className="col-1 me-1 pe-0 h-50 d-flex align-items-center justify-content-end bar-bottom-text white-text-color">
+          <div className="col-1 me-1 pe-0 h-50 d-flex align-items-center justify-content-end bar-bottom-text white-text-color" aria-label="Previous recipes">
             <span>Previous</span>
             <button onClick={prevPage} className="material-symbols-rounded white-text-color bg-transparent border-0" aria-label="Previous">arrow_circle_left</button>
           </div>
 
           {/* Next button */}
-          <div className="col-1 pe-0 h-50 d-flex align-items-center justify-content-end bar-bottom-text white-text-color">
+          <div className="col-1 pe-0 h-50 d-flex align-items-center justify-content-end bar-bottom-text white-text-color" aria-label="Next recipes">
             <span>Next</span>
             <button onClick={nextPage} className="material-symbols-rounded white-text-color bg-transparent border-0" aria-label="Next">arrow_circle_right</button>
           </div>
 
           {/* Filter button */}
-          {/* <div className="col-1 pe-0 h-50 d-flex align-items-center justify-content-end bar-bottom-text white-text-color">
+          {/* <div className="col-1 pe-0 h-50 d-flex align-items-center justify-content-end bar-bottom-text white-text-color" aria-label="Filter recipes">
             <span>Filter</span>
             <button className="material-symbols-rounded white-text-color bg-transparent border-0" aria-label="Filter">hdr_auto</button>
           </div> */}
